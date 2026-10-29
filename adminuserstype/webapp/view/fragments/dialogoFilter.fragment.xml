@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog confirm="handleFilterDialogConfirm" resetFilters="onResetFilter">
+		<filterItems>
+			<ViewSettingsFilterItem text="{i18n>description}" key="DESCRIPTION" multiSelect="false" items="{oModelFilter1>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter1>key}" key="{oModelFilter1>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			<ViewSettingsFilterItem text="{i18n>estado}" key="DELETESTATUS" multiSelect="false" items="{oModelFilter2>/}">
+				<items>
+					<ViewSettingsItem text="{oModelFilter2>text}" key="{oModelFilter2>key}"/>
+				</items>
+			</ViewSettingsFilterItem>
+			
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>	
